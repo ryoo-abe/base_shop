@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - BASE SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BASE SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">商品一覧</a></li>
+                <li><a href="contacts.html">お問い合わせ</a></li>
+                <li><a href="cart.html">カート (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="site-title">お問い合わせ</h2>
+        <section class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">お名前:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button id="contact-submit-button" type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ECサイトのサンプル</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

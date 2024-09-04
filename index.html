@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PDMP4VKR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BASE SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">商品一覧</a></li>
+                <li><a href="contacts.html">お問い合わせ</a></li>
+                <li><a href="cart.html">カート (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="site-title">商品一覧</h2>
+        <section class="product-list">
+                <div class="product">
+                    <img src="images/icon_002750_256.png" alt="商品画像">
+                    <h3>商品１</h3>
+                    <p>¥1000</p>
+                    <button class="addToCartBtn" data-product="商品1" data-price="1000">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="1">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_111270_256.png" alt="商品画像">
+                    <h3>商品２</h3>
+                    <p>¥2000</p>
+                    <button class="addToCartBtn" data-product="商品2" data-price="2000">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="2">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_111530_256.png" alt="商品画像">
+                    <h3>商品３</h3>
+                    <p>¥10000</p>
+                    <button class="addToCartBtn" data-product="商品3" data-price="10000">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="3">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_111600_256.png" alt="商品画像">
+                    <h3>商品4</h3>
+                    <p>¥1500</p>
+                    <button class="addToCartBtn" data-product="商品4" data-price="1500">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="4">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_111800_256.png" alt="商品画像">
+                    <h3>商品5</h3>
+                    <p>¥5500</p>
+                    <button class="addToCartBtn" data-product="商品5" data-price="5500">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="5">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_112150_256.png" alt="商品画像">
+                    <h3>商品6</h3>
+                    <p>¥2980</p>
+                    <button class="addToCartBtn" data-product="商品6" data-price="2980">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="6">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_112950_256.png" alt="商品画像">
+                    <h3>商品7</h3>
+                    <p>¥700</p>
+                    <button class="addToCartBtn" data-product="商品7" data-price="700">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="7">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_113090_256.png" alt="商品画像">
+                    <h3>商品8</h3>
+                    <p>¥4000</p>
+                    <button class="addToCartBtn" data-product="商品8" data-price="4000">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="8">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_113330_256.png" alt="商品画像">
+                    <h3>商品9</h3>
+                    <p>¥500</p>
+                    <button class="addToCartBtn" data-product="商品9" data-price="500">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="9">詳細を見る</button>
+                </div>
+                <div class="product">
+                    <img src="images/icon_113420_256.png" alt="商品画像">
+                    <h3>商品10</h3>
+                    <p>¥400</p>
+                    <button class="addToCartBtn" data-product="商品10" data-price="400">カートに追加</button>
+                    <button class="openModalBtn" data-product-id="10">詳細を見る</button>
+                </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>商品詳細</h2>
+            <p id="modal-product-detail">これは商品詳細の内容です。</p>
+            <br>
+            <h3>レビュー</h3>
+            <div id="modal-product-reviews" class="review-container">
+                <!-- レビューがここに表示されます -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ECサイトのサンプル</p>
+    </footer>
+
+    <script src="store.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

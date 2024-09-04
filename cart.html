@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カート - BASE SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BASE SHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">商品一覧</a></li>
+                <li><a href="contacts.html">お問い合わせ</a></li>
+                <li><a href="cart.html">カート (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="site-title">カート</h2>
+        <section class="cart">
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <h3>合計: <span id="cart-total-amount">¥0</span></h3>
+                <button id="checkoutBtn">購入手続き</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ECサイトのサンプル</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
